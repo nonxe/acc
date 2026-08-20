@@ -1,0 +1,22 @@
+Component,Component Pin,Wire Color,Arduino UNO Pin,Description
+SIM800L GSM Module,TX,Green,Digital Pin 2 (rxPin),GSM module transmits data to Arduino (SoftwareSerial RX)
+SIM800L GSM Module,RX,Green,Digital Pin 3 (txPin),Arduino transmits AT commands to GSM module (SoftwareSerial TX)
+SIM800L GSM Module,VCC,Red,5V (via buck converter),Power supply (needs 3.4V-4.4V - use buck converter from 5V)
+SIM800L GSM Module,GND,Black,GND,Common ground
+NEO-6M GPS Module,TX,Green,Digital Pin 8 (AltSoftSerial RX),GPS module transmits NMEA data to Arduino (AltSoftSerial fixed RX pin)
+NEO-6M GPS Module,RX,Green,Digital Pin 9 (AltSoftSerial TX),Arduino sends commands to GPS module (AltSoftSerial fixed TX pin)
+NEO-6M GPS Module,VCC,Red,5V,Power supply for GPS module
+NEO-6M GPS Module,GND,Black,GND,Common ground
+ADXL335 Accelerometer,X,Green,Analog Pin A1,X-axis analog output
+ADXL335 Accelerometer,Y,Green,Analog Pin A2,Y-axis analog output
+ADXL335 Accelerometer,Z,Green,Analog Pin A3,Z-axis analog output
+ADXL335 Accelerometer,VCC,Red,3.3V,Power supply (MUST use 3.3V - NOT 5V)
+ADXL335 Accelerometer,GND,Black,GND,Common ground
+16x2 I2C LCD Display,SDA,Green,Analog Pin A4 (SDA),I2C data line
+16x2 I2C LCD Display,SCL,Green,Analog Pin A5 (SCL),I2C clock line
+16x2 I2C LCD Display,VCC,Red,5V,Power supply for LCD backlight and logic
+16x2 I2C LCD Display,GND,Black,GND,Common ground
+Buzzer,Signal (+),Green,Digital Pin 12,Buzzer signal - HIGH to activate alert sound
+Buzzer,GND (-),Black,GND,Common ground
+Push Button,Side 1,Green,Digital Pin 11 (INPUT_PULLUP),Cancel button - press to cancel alert (uses internal pullup resistor)
+Push Button,Side 2,Black,GND,Connected to ground (button press pulls pin LOW)
